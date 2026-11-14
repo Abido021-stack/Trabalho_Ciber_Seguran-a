@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança</title>
+</head>
+<body>
+    <header>
+        <h1>Ciber Segurança UPF</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="content1.html">Conteudo 1</a></li>
+                <li><a href="content2.html">Conteudo 2</a></li>
+                <li><a href="security.html">Segurança</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="controls">
+            <button id="theme-toggle">Tema</button>
+            <button id="font-toggle" title="acessibilidade">
+                <span class="material-icons">acessibilidade</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Gerador de Senhas Fortes</h2>
+            <p>Clique no botão abaixo para gerar uma senha aleatória com letras maiúsculas, minúsculas, números e símbolos.</p>
+            
+            <div class="password-box">
+                <input type="text" id="password-output" readonly placeholder="Sua senha aparecerá aqui...">
+                <button id="generate-pw-btn" style="background-color: var(--primary-color); color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer;">Gerar Senha</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Projeto Web Lab / Universidade de Passo Fundo</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
