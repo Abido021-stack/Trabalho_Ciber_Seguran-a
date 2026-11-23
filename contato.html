@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Cibersegurança UPF</h1>
+        <div class="controls">
+            <button id="theme-toggle" title="Tema">
+                <span class="material-icons">brightness_6</span>
+            </button>
+            <button id="font-toggle" title="Acessibilidade">
+                <span class="material-icons">accessibility</span>
+            </button>
+            <button id="font-decrease" title="Diminuir fonte">A-</button>
+            <span id="font-value">100%</span>
+            <button id="font-increase" title="Aumentar fonte">A+</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="content1.html">Conteúdo 1</a></li>
+                <li><a href="content2.html">Conteúdo 2</a></li>
+                <li><a href="seguranca.html">Segurança</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Fale Conosco</h2>
+            <p>Envie sua mensagem para a equipe do projeto sobre dúvidas ou sugestões referentes à cartilha de cibersegurança.</p>
+
+            <form id="contact-form">
+                <div>
+                    <label for="name">Seu Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                </div>
+                <div>
+                    <label for="email">Seu E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                </div>
+                <div>
+                    <label for="subject">Assunto:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Ex: Dúvida sobre a cartilha" required>
+                </div>
+                <div>
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Projeto Web Lab / Universidade de Passo Fundo</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

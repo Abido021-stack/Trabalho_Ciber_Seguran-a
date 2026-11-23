@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Cibersegurança UPF</h1>
+        <div class="controls">
+            <button id="theme-toggle" title="Tema">
+                <span class="material-icons">brightness_6</span>
+            </button>
+            <button id="font-toggle" title="Acessibilidade">
+                <span class="material-icons">accessibility</span>
+            </button>
+            <button id="font-decrease" title="Diminuir fonte">A-</button>
+            <span id="font-value">100%</span>
+            <button id="font-increase" title="Aumentar fonte">A+</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="content1.html">Conteúdo 1</a></li>
+                <li><a href="content2.html">Conteúdo 2</a></li>
+                <li><a href="seguranca.html">Segurança</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Área da Ferramenta Interativa -->
+        <section class="card">
+            <h2>Gerador de Senhas Fortes</h2>
+            <p>Clique no botão abaixo para gerar uma senha aleatória com letras maiúsculas, minúsculas, números e símbolos.</p>
+            
+            <div class="password-box">
+                <input type="text" id="password-output" readonly placeholder="Sua senha aparecerá aqui...">
+                <button id="generate-pw-btn">Gerar Senha</button>
+            </div>
+        </section>
+
+        <!-- Conteúdo Teórico sobre Preservação de Dados -->
+        <section class="card">
+            <h2>Mecanismos de Preservação de Dados</h2>
+            
+            <h3>Controle de Acesso e Zero Trust</h3>
+            <p>O controle de acesso lógico é essencial para proteger dados sensíveis. O paradigma <strong>Zero Trust</strong> estabelece que nada deve ser confiado automaticamente.</p>
+            <ul>
+                <li><strong>Menor Privilégio:</strong> Conceder aos usuários apenas as permissões estritamente necessárias.</li>
+                <li><strong>Autenticação Multi-Fator (MFA):</strong> Adicionar camadas extras de verificação para além da senha.</li>
+            </ul>
+
+            <h3>Criptografia e Resiliência</h3>
+            <p>A criptografia assegura a confidencialidade das informações em repouso e em trânsito.</p>
+            <ul>
+                <li><strong>Proteção de Dados:</strong> Uso de protocolos seguros (como HTTPS/TLS) para evitar interceptações.</li>
+                <li><strong>Backups Seguros:</strong> Manutenção de cópias de segurança atualizadas para garantir a recuperação após incidentes.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Projeto Web Lab / Universidade de Passo Fundo</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/password.js"></script>
+</body>
+</html>
