@@ -1,6 +1,5 @@
 const themeToggle = document.getElementById("theme-toggle");
 const fontToggle = document.getElementById("font-toggle");
-const fontPanel = document.getElementById("font-panel");
 const fontDecrease = document.getElementById("font-decrease");
 const fontIncrease = document.getElementById("font-increase");
 const fontValue = document.getElementById("font-value");
@@ -30,7 +29,11 @@ themeToggle.addEventListener("click", function () {
 });
 
 fontToggle.addEventListener("click", function () {
-    fontPanel.hidden = !fontPanel.hidden;
+    if (fontSize === 100) {
+        changeFontSize(20);
+    } else {
+        changeFontSize(100 - fontSize);
+    }
 });
 
 fontDecrease.addEventListener("click", function () {
