@@ -13,6 +13,19 @@
 <body>
     <header>
         <h1>Cibersegurança UPF</h1>
+        <div class="controls">
+            <button id="theme-toggle" title="Tema">
+                <span class="material-icons">brightness_6</span>
+            </button>
+            <button id="font-toggle" title="Acessibilidade">
+                <span class="material-icons">accessibility</span>
+            </button>
+            <div id="font-panel" hidden>
+                <button id="font-decrease" title="Diminuir fonte">A-</button>
+                <span id="font-value">100%</span>
+                <button id="font-increase" title="Aumentar fonte">A+</button>
+            </div>            
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -23,12 +36,6 @@
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
-        <div class="controls">
-            <button id="theme-toggle">Tema</button>
-            <button id="font-toggle" title="Acessibilidade">
-                <span class="material-icons">accessibility</span>
-            </button>
-        </div>
     </header>
 
     <main>
@@ -38,25 +45,21 @@
 
             <form id="contact-form">
                 <div>
-                    <label for="name">Seu Nome:</label><br>
+                    <label for="name">Seu Nome:</label>
                     <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
                 </div>
-                <br>
                 <div>
-                    <label for="email">Seu E-mail:</label><br>
+                    <label for="email">Seu E-mail:</label>
                     <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
                 </div>
-                <br>
                 <div>
-                    <label for="subject">Assunto:</label><br>
+                    <label for="subject">Assunto:</label>
                     <input type="text" id="subject" name="subject" placeholder="Ex: Dúvida sobre a cartilha" required>
                 </div>
-                <br>
                 <div>
-                    <label for="message">Mensagem:</label><br>
+                    <label for="message">Mensagem:</label>
                     <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
                 </div>
-                <br>
                 <button type="submit">Enviar</button>
             </form>
         </section>

@@ -13,6 +13,19 @@
 <body>
     <header>
         <h1>Cibersegurança UPF</h1>
+        <div class="controls">
+            <button id="theme-toggle" title="Tema">
+                <span class="material-icons">brightness_6</span>
+            </button>
+            <button id="font-toggle" title="Acessibilidade">
+                <span class="material-icons">accessibility</span>
+            </button>
+            <div id="font-panel" hidden>
+                <button id="font-decrease" title="Diminuir fonte">A-</button>
+                <span id="font-value">100%</span>
+                <button id="font-increase" title="Aumentar fonte">A+</button>
+            </div>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -23,12 +36,6 @@
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
-        <div class="controls">
-            <button id="theme-toggle">Tema</button>
-            <button id="font-toggle" title="Acessibilidade">
-                <span class="material-icons">accessibility</span>
-            </button>
-        </div>
     </header>
 
     <main>
@@ -36,19 +43,25 @@
             <h2>Integrantes do Grupo</h2>
             <div class="team-grid">
                 <div class="team-member">
-                    <img height="200" width="150" src="assets/img-guilherme.jpeg" alt="Foto de Guilherme Barbosa Abido">
-                    <h3>Guilherme Barbosa Abido</h3>
-                    <p>Estudante ADS, atualmente trabalhando como técnico de impressoras de gráficas na FullPrint.</p>
+                    <img src="assets/img-guilherme.jpeg" alt="Foto de Guilherme Barbosa Abido">
+                    <div class="team-info">
+                        <h3>Guilherme Barbosa Abido</h3>
+                        <p>Estudante ADS, atualmente trabalhando como técnico de impressoras de gráficas na FullPrint.</p>
+                    </div>
                 </div>
                 <div class="team-member">
-                    <img height="200" width="150" src="assets/img-vitor.jpeg" alt="Foto de Vitor Ebone Pavão">
-                    <h3>Vitor Ebone Pavão</h3>
-                    <p>Estudante ADS.</p>
+                    <img src="assets/img-vitor.jpeg" alt="Foto de Vitor Ebone Pavão">
+                    <div class="team-info">
+                        <h3>Vitor Ebone Pavão</h3>
+                        <p>Estudante ADS.</p>
+                    </div>
                 </div>
                 <div class="team-member">
-                    <img height="200" width="150" src="assets/img-gabriela.jpeg" alt="Foto de Gabriela Toldo Da Rosa">
-                    <h3>Gabriela Toldo Da Rosa</h3>
-                    <p>Estudante do curso de Ciência da Computação.</p>
+                    <img src="assets/img-gabriela.jpeg" alt="Foto de Gabriela Toldo Da Rosa">
+                    <div class="team-info">
+                        <h3>Gabriela Toldo Da Rosa</h3>
+                        <p>Estudante do curso de Ciência da Computação.</p>
+                    </div>
                 </div>
             </div>
         </section>

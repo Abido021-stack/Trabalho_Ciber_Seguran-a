@@ -13,6 +13,19 @@
 <body>
     <header>
         <h1>Cibersegurança UPF</h1>
+        <div class="controls">
+            <button id="theme-toggle" title="Tema">
+                <span class="material-icons">brightness_6</span>
+            </button>
+            <button id="font-toggle" title="Acessibilidade">
+                <span class="material-icons">accessibility</span>
+            </button>
+            <div id="font-panel" hidden>
+                <button id="font-decrease" title="Diminuir fonte">A-</button>
+                <span id="font-value">100%</span>
+                <button id="font-increase" title="Aumentar fonte">A+</button>
+            </div>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -23,12 +36,6 @@
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
-        <div class="controls">
-            <button id="theme-toggle">Tema</button>
-            <button id="font-toggle" title="Acessibilidade">
-                <span class="material-icons">accessibility</span>
-            </button>
-        </div>
     </header>
 
     <main>
